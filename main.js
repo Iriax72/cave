@@ -1,5 +1,5 @@
 import Phaser from "https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.esm.js";
-import {Player} from "./js/Playerjs";
+//import {Player} from "./js/Playerjs";
 
 alert("begining of main.js");
 
