@@ -1,7 +1,5 @@
 import {Player} from "./js/Player.js";
 
-alert("begining of main.js");
-
 const config = {
     type: Phaser.AUTO,
     width: 100,
@@ -17,7 +15,7 @@ const config = {
 const game = new Phaser.Game(config);
 
 function preload() {
-
+    this.load.image('playerImage', './assets/robot.png')
 }
 
 function create() {
