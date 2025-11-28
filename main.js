@@ -20,7 +20,7 @@ function preload() {
 }
 
 function create() {
-    Player.createPlayer();
+    const player = new Player();
 }
 
 function update() {
