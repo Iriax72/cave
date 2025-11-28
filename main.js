@@ -1,4 +1,4 @@
-import Player from "./js/Playerjs";
+import Player from "./js/Player.js";
 
 alert("begining of main.js");
 
