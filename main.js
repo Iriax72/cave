@@ -1,4 +1,3 @@
-import Phaser from "https://esm.sh/phaser@3";
 import Player from "./js/Playerjs";
 
 alert("begining of main.js");
