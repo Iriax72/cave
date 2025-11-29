@@ -9,7 +9,7 @@ const config = {
         create: create,
         update: update
     },
-    physics: ""
+    physics: {default: "arcade"}
 };
 
 const game = new Phaser.Game(config);
