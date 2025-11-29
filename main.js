@@ -2,8 +2,8 @@ import {Player} from "./js/Player.js";
 
 const config = {
     type: Phaser.AUTO,
-    width: 100,
-    height: 100,
+    width: 800,
+    height: 600,
     scene: {
         preload: preload,
         create: create,
@@ -15,6 +15,7 @@ const config = {
 const game = new Phaser.Game(config);
 
 function preload() {
+    game.stage.backgroundColor = '#2802b2';
     this.load.image('player-idle-1', './assets/images/player-idle-1.png');
     this.load.image('player-idle-2', './assets/images/player-idle-2.png');
     this.load.image('player-right-1', './assets/images/player-right-1.png');
