@@ -15,7 +15,12 @@ const config = {
 const game = new Phaser.Game(config);
 
 function preload() {
-    this.load.image('playerImg', './assets/robot.png')
+    this.load.image('player-idle-1', './assets/images/player-idle-1.png');
+    this.load.image('player-idle-2', './assets/images/player-idle-2.png');
+    this.load.image('player-right-1', './assets/images/player-right-1.png');
+    this.load.image('player-right-2', './assets/images/player-right-2.png');
+    this.load.image('player-left-1', './assets/images/player-left-1.png');
+    this.load.image('player-left-2', './assets/imaged/player-left-2.png');
 }
 
 function create() {
