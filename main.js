@@ -1,12 +1,16 @@
 import {Player} from "./js/Player.js";
 
-const gameContainer = document.querySelector("#gameContainer");
+const gameContainer = document.querySelector("#game-container");
 
 const config = {
     type: Phaser.AUTO,
     width: 800,
     height: 600,
     parent: gameContainer,
+    scale: {
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH
+    },
     scene: {
         preload: preload,
         create: create,
