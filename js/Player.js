@@ -7,5 +7,6 @@ export class Player extends Phaser.Physics.Arcade.Sprite {
 
         //this.setCollideWorldBounds(true);
         //this.setBounce(0.1);
+        alert(this)
     }
 }

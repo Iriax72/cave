@@ -20,8 +20,9 @@ const config = {
 };
 
 const game = new Phaser.Game(config);
-
+alert("1")
 function preload() {
+    alert("2")
     game.stage.backgroundColor = '#2802b2';
     this.load.image('player-idle-1', './assets/images/player-idle-1.png');
     this.load.image('player-idle-2', './assets/images/player-idle-2.png');
@@ -32,6 +33,7 @@ function preload() {
 }
 
 function create() {
+    alert("3")
     const player = new Player(this, [300, 300]);
 }
 
