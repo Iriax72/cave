@@ -23,7 +23,7 @@ const game = new Phaser.Game(config);
 alert("1")
 function preload() {
     alert("2")
-    game.stage.backgroundColor = '#2802b2';
+    //game.stage.backgroundColor = '#2802b2';
     this.load.image('player-idle-1', './assets/images/player-idle-1.png');
     this.load.image('player-idle-2', './assets/images/player-idle-2.png');
     this.load.image('player-right-1', './assets/images/player-right-1.png');
