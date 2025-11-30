@@ -8,6 +8,26 @@
     <script type="module" src="./main.js" defer></script>
 </head>
 <body>
+    <script id="intercept-error-temporaire">
+        // Erreurs JS classiques (exceptions)
+        window.onerror = function (message, source, lineno, colno, error) {
+        alert(
+            "Erreur détectée :\n\n" +
+            message + "\n" +
+            "Fichier : " + source + "\n" +
+            "Ligne : " + lineno + ", Colonne : " + colno + "\n" +
+            (error && error.stack ? "\nStack :\n" + error.stack : "")
+        );
+        return false; // laisse aussi la console afficher l'erreur
+        };
+        // Erreurs dans les Promises non catchées
+        window.addEventListener("unhandledrejection", function (event) {
+            alert(
+                "Erreur dans une Promise :\n\n" +
+                (event.reason && event.reason.message ? event.reason.message : event.reason)
+            );
+        });
+    </script>
     <div id="game-container"></div>
 </body>
 </html>
